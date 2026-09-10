@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripcion - Puerto Abierto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-principal">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Puerto Abierto</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link" href="index.html">Inicio</a>
+                        <a class="nav-item nav-link" href="cartelera.html">Cartelera</a>
+                        <a class="nav-item nav-link active" href="inscripcion.html" aria-current="page">Inscripcion</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="encabezado-pagina">
+            <div class="container">
+                <h1>Inscripcion a actividades</h1>
+                <p>Completa el formulario para registrar tu interes en participar en una actividad del centro cultural.</p>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <form class="formulario-inscripcion">
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md-6">
+                                    <label for="nombre">Nombre completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej: Camila Rojas" required>
+                                </div>
+
+                                <div class="form-group col-12 col-md-6">
+                                    <label for="correo">Correo electronico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="nombre@correo.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-12 col-md-6">
+                                    <label for="telefono">Telefono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="+56 9 1234 5678" required>
+                                </div>
+
+                                <div class="form-group col-12 col-md-6">
+                                    <label for="edad">Edad</label>
+                                    <input type="number" class="form-control" id="edad" name="edad" min="1" max="100" placeholder="Ej: 25" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="actividad">Actividad de interes</label>
+                                <select class="form-control" id="actividad" name="actividad" required>
+                                    <option value="" selected disabled>Seleccione una actividad</option>
+                                    <option>Pintura para principiantes</option>
+                                    <option>Escena abierta</option>
+                                    <option>Concierto acustico local</option>
+                                    <option>Miradas del barrio</option>
+                                    <option>Movimiento y expresion</option>
+                                    <option>Club de lectura comunitario</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="comentarios">Comentarios adicionales</label>
+                                <textarea class="form-control" id="comentarios" name="comentarios" rows="4" placeholder="Escribe aqui cualquier informacion adicional"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="condiciones" name="condiciones" required>
+                                    <label class="form-check-label" for="condiciones">
+                                        Acepto las condiciones de participacion.
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-destacado">Enviar inscripcion</button>
+                        </form>
+                    </div>
+
+                    <aside class="col-12 col-lg-4 mt-4 mt-lg-0">
+                        <div class="bloque-informacion">
+                            <h2>Informacion importante</h2>
+                            <p>La inscripcion permite al centro cultural contactar a las personas interesadas y confirmar cupos disponibles.</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Centro Cultural Puerto Abierto.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

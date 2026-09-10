@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2d2d2d;
+    background-color: #f7f3ee;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bg-principal {
+    background-color: #163d3b;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link:focus,
+.btn:focus,
+.form-control:focus,
+.form-check-input:focus {
+    outline: 3px solid #f2c14e;
+    outline-offset: 2px;
+}
+
+.bienvenida {
+    min-height: 70vh;
+    padding: 110px 0;
+    color: white;
+    background-image: linear-gradient(rgba(16, 33, 35, 0.74), rgba(16, 33, 35, 0.66)), url("https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Centro_Cultural_Estaci%C3%B3n_Mapocho%2C_Santiago_20200203_02.jpg/1280px-Centro_Cultural_Estaci%C3%B3n_Mapocho%2C_Santiago_20200203_02.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.bienvenida h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.texto-etiqueta {
+    margin-bottom: 10px;
+    color: #f2c14e;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-destacado {
+    color: #163d3b;
+    background-color: #f2c14e;
+    border: 0;
+    font-weight: bold;
+}
+
+.btn-destacado:hover {
+    color: #163d3b;
+    background-color: #d9a928;
+}
+
+.seccion {
+    padding: 55px 0;
+}
+
+.encabezado-pagina {
+    padding: 60px 0;
+    color: #ffffff;
+    background-color: #b4553b;
+}
+
+.encabezado-pagina h1 {
+    font-weight: bold;
+}
+
+.encabezado-pagina p {
+    max-width: 650px;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.seccion-clara {
+    background-color: #ffffff;
+}
+
+.seccion h2,
+.seccion h1 {
+    color: #163d3b;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.bloque-informacion {
+    padding: 24px;
+    background-color: #ffffff;
+    border-left: 6px solid #b4553b;
+}
+
+.bloque-informacion h3 {
+    color: #b4553b;
+    font-size: 24px;
+}
+
+.card {
+    border: 1px solid #e0d8ce;
+    border-radius: 6px;
+}
+
+.actividad img {
+    height: 210px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    color: #163d3b;
+    font-size: 22px;
+}
+
+.categoria {
+    color: #b4553b;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.fecha {
+    color: #5f6b69;
+    font-weight: bold;
+}
+
+.datos-contacto {
+    padding: 20px;
+    background-color: #ffffff;
+    border-left: 6px solid #f2c14e;
+}
+
+.formulario-inscripcion {
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #e0d8ce;
+    border-radius: 6px;
+}
+
+.formulario-inscripcion label {
+    color: #163d3b;
+    font-weight: bold;
+}
+
+.footer {
+    padding: 25px 0;
+    color: #ffffff;
+    background-color: #163d3b;
+}
+
+.footer p {
+    margin-bottom: 6px;
+}
+
+.referencia-imagen {
+    font-size: 14px;
+    color: #d9e7e3;
+}
+
+@media (max-width: 767px) {
+    .bienvenida {
+        min-height: 60vh;
+        padding: 80px 0;
+    }
+
+    .bienvenida h1 {
+        font-size: 34px;
+    }
+
+    .seccion,
+    .encabezado-pagina {
+        padding: 40px 0;
+    }
+}
